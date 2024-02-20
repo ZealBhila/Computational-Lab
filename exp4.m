@@ -1,5 +1,5 @@
 % Define the coefficient matrix A
-n=4;
+n=100;
 a=zeros(n,n);
 c=zeros(n,1);
 
@@ -36,3 +36,8 @@ end
 % Display the solution
 disp('Solution x:');
 disp(x);
+%Timer
+tic
+elapsed_time=toc;
+
+disp(['Elapsed time: ', num2str(elapsed_time),' seconds']);
